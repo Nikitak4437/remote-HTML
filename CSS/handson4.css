@@ -1,0 +1,230 @@
+* {
+    margin: 0px;
+}
+
+.one {
+    height: 30px;
+    width: 100%;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(to left, yellow, green, red);
+}
+
+.two {
+    background-color: skyblue;
+    width: 700px;
+    height: 50px;
+    border: 3px solid red;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 250px;
+}
+
+.container {
+    border: 2px solid grey;
+    height: 200px;
+    width: 100%;
+    border-radius: 10px;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: space-around;
+    background-image: radial-gradient(blue, lightgreen);
+}
+
+.child {
+    color: brown;
+    border: 2px solid grey;
+    border-radius: 20px;
+    height: 100px;
+    width: 250px;
+    text-align: center;
+    background-color: yellow;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    font: bold;
+}
+
+.three {
+    width: 100%;
+    height: 40px;
+    border: 1px solid red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: red;
+    color: white;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    font: bold;
+    font-size: large;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.four {
+    width: 100%;
+    height: 40px;
+    border: 1px solid red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: yellow;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    font: bold;
+    font-size: large;
+    font-weight: bold;
+    letter-spacing: 3px;
+    background-image: linear-gradient(to left, red, yellow, red);
+}
+
+.grid {
+    background-color: white;
+    width: 100%;
+    height: 100px;
+    display: grid;
+    grid-template-rows: repeat(4, auto);
+    grid-template-columns: repeat(4, auto);
+}
+
+.grid1 {
+    background-color: red;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    padding-bottom: 20px;
+    margin: 5px;
+    color: white;
+    text-align: center;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    font: bolder;
+    font-size: x-large;
+    font-weight: bolder;
+    font-style: normal;
+}
+
+.grid2 {
+    color: white;
+    background-color: green;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    padding: 5px;
+    margin: 5px;
+    text-align: center;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    font: bolder;
+    font-size: x-large;
+    font-weight: bolder;
+    font-style: normal;
+}
+
+.grid3 {
+    color: white;
+    background-color: blue;
+    padding: 5px;
+    margin: 5px;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    font: bolder;
+    font-size: x-large;
+    font-weight: bolder;
+    font-style: normal;
+}
+
+.grid4 {
+    color: white;
+    background-color: blueviolet;
+    padding: 5px;
+    margin: 5px;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    font: bolder;
+    font-size: large;
+    font-weight: bolder;
+    font-style: normal;
+}
+
+.grid5 {
+    color: white;
+    color: white;
+    background-color: black;
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    padding: 20px;
+    margin: 5px;
+}
+
+.grid6 {
+    background-color: orange;
+    color: white;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    padding: 2px;
+    margin: 5px;
+    font: bolder;
+    font-size: larger;
+    font-weight: bolder;
+    font-style: normal;
+    letter-spacing: 2px;
+}
+
+.grid7 {
+    background-color: skyblue;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    padding: 2px;
+    margin: 5px;
+    text-align: center;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    font: bolder;
+    font-size: large;
+    font-weight: bolder;
+    font-style: normal;
+}
+
+.parent {
+    width: 100%;
+    height: 147px;
+    border: 2px solid grey;
+    background-color: aqua;
+    border-radius: 20px;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+
+.child1 {
+    border: 2px solid green;
+    height: 70px;
+    width: 350px;
+    font-size: small;
+    border-radius: 10px;
+}
+
+.child2 {
+    border: 2px solid green;
+    height: 70px;
+    width: 350px;
+    border-radius: 10px;
+}
+
+.child3 {
+    border: 2px solid green;
+    height: 70px;
+    width: 350px;
+    border-radius: 10px;
+}
+
+.child4 {
+    border: 2px solid green;
+    height: 70px;
+    width: 350px;
+    border-radius: 10px;
+    position: absolute;
+    top: 180px;
+    left: 463px;
+}
