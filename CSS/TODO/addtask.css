@@ -1,0 +1,203 @@
+body {
+    top: 0px;
+    left: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f7f7f7 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+
+.heading {
+    margin-top: 0px;
+    top: 0px;
+    left: 0px;
+    width: 1366px;
+    height: 94px;
+    background: #ffffff 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 30px #7b7b7b29;
+    opacity: 1;
+}
+
+.task {
+    padding-top: 23px;
+    padding-left: 137px;
+    padding-bottom: 22px;
+    font: normal normal bold 49px Inter;
+    letter-spacing: 0px;
+    opacity: 1;
+}
+
+.list {
+    font: normal normal bold 49px Inter;
+    letter-spacing: 0px;
+    color: #00a5ec;
+}
+
+.new {
+    text-align: left;
+    font: normal normal normal 24px Inter;
+    font-size: 24px;
+    letter-spacing: 0px;
+    color: #424242;
+    opacity: 1;
+}
+
+.sign {
+    position: relative;
+    left: 422px;
+    top: 65px;
+    font-weight: 900;
+    font-size: x-large;
+}
+
+.sign2 {
+    position: relative;
+    left: 1021px;
+    top: 33px;
+    font-weight: 900;
+    font-size: x-large;
+}
+
+.sign2 a {
+    font-weight: 900;
+    font-size: x-large;
+}
+
+.sign2 p {
+    position: absolute;
+    left: 42px;
+    top: -15px;
+    font-weight: 900;
+    font-size: large;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin-left: 139px;
+    margin-top: 50px;
+    margin-right: 139px;
+    margin-bottom: 20px;
+}
+
+.grid-items {
+    margin-bottom: 10px;
+    width: 352px;
+    height: 360px;
+    background: #ffffff 0% 0% no-repeat padding-box;
+    border: 1px solid #ededed;
+    border-radius: 10px;
+    opacity: 1;
+}
+
+.grid-items:hover {
+    background: #f7f7f7 0% 0% no-repeat padding-box;
+    opacity: 1;
+    z-index: +1;
+}
+
+.plans {
+    padding-top: 34px;
+    padding-left: 30px;
+    text-align: left;
+    font-size: 20px;
+    font: normal normal medium 24px Inter;
+    letter-spacing: 0px;
+    color: #00a5ec;
+    opacity: 1;
+}
+
+.content {
+    width: 103px;
+    height: 21px;
+    text-align: left;
+    font: normal normal normal 18px/21px Inter;
+    letter-spacing: 0px;
+    color: #c2c2c2;
+    opacity: 1;
+    text-decoration: line-through;
+}
+
+form {
+    padding-left: 59px;
+    padding-top: 30px;
+}
+
+.big {
+    filter: blur(2px);
+    -webkit-filter: blur(2px);
+    position: relative;
+    top: 0px;
+    left: 0px;
+    background: #00000008 0% 0% no-repeat padding-box;
+    opacity: 0.6;
+    z-index: -1;
+}
+
+.pop {
+    position: absolute;
+    top: 247px;
+    width: 388px;
+    height: 222px;
+    background: #ffffff 0% 0% no-repeat padding-box;
+    box-shadow: 0px 0px 20px #67676729;
+    border: 1px solid #ededed;
+    border-radius: 10px;
+    opacity: 1;
+    z-index: +1;
+}
+
+.click p {
+    width: 148px;
+    height: 26px;
+    /* UI Properties */
+    text-align: left;
+    font: normal normal medium 22px/26px Inter;
+    letter-spacing: 0px;
+    color: #404040;
+    opacity: 1;
+    padding-left: 15px;
+}
+
+#close {
+    position: relative;
+    top: -39px;
+    left: 358px;
+    width: 18px;
+    height: 18px;
+    color: grey;
+    opacity: 1;
+}
+
+#close a {
+    text-decoration: none;
+    color: #404040;
+}
+
+.pop button {
+    position: relative;
+    top: 30px;
+    left: 220px;
+    width: 100px;
+    height: 43px;
+    background: #00a5ec 0% 0% no-repeat padding-box;
+    border-radius: 4px;
+    opacity: 1;
+}
+
+.pop button a {
+    text-decoration: none;
+    color: white;
+}
+
+.pop input {
+    position: absolute;
+    top: 98px;
+    left: 6px;
+    width: 369px;
+    height: 40px;
+    background: #f7f7f7 0% 0% no-repeat padding-box;
+    border: 1px solid #ededed;
+    border-radius: 4px;
+}
