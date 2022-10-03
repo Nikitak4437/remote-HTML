@@ -1,0 +1,117 @@
+* {
+    background-color: rgb(224, 224, 24);
+}
+
+.top {
+    text-align: center;
+}
+
+.box {
+    height: 100px;
+    width: 100px;
+    background-color: yellowgreen;
+    margin-bottom: 20px;
+}
+
+.table {
+    margin-left: 500px;
+}
+
+.one {
+    height: 100px;
+    width: 100px;
+    transition-property: all;
+    transition-duration: 2s;
+    transition-timing-function: ease-out;
+}
+
+.one:hover {
+    height: 100px;
+    width: 200px;
+}
+
+.two {
+    height: 100px;
+    width: 100px;
+    transition-property: all;
+    transition-duration: 2s;
+    transition-timing-function: ease-out;
+}
+
+.two:hover {
+    height: 300px;
+    width: 300px;
+}
+
+.three {
+    height: 100px;
+    width: 100px;
+    transition-property: all;
+    transition-duration: 2s;
+    transition-timing-function: linear;
+}
+
+.three:hover {
+    height: 100px;
+    width: 200px;
+}
+
+.four {
+    height: 100px;
+    width: 100px;
+    transition-property: all;
+    transition-duration: 2s;
+    transition-timing-function: ease;
+}
+
+.four:hover {
+    height: 100px;
+    width: 200px;
+}
+
+.five {
+    height: 100px;
+    width: 100px;
+    transition-property: all;
+    transition-duration: 2s;
+    transition-timing-function: ease-in-out;
+}
+
+.five:hover {
+    height: 100px;
+    width: 200px;
+}
+
+.six {
+    height: 100px;
+    width: 100px;
+    transition-property: all;
+    transition-duration: 2s;
+    transition-timing-function: ease-in;
+}
+
+.six:hover {
+    height: 100px;
+    width: 200px;
+}
+
+.seven {
+    height: 100px;
+    width: 100px;
+    transition-property: all;
+    transition-duration: 2s;
+    transition-timing-function: ease-out;
+}
+
+.seven:hover {
+    height: 100px;
+    width: 200px;
+}
+
+.back {
+    margin-left: 540px;
+}
+
+.next {
+    margin-left: 540px;
+}

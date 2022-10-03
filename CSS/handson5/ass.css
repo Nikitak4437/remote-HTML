@@ -1,0 +1,160 @@
+* {
+    background-color: rgb(224, 224, 24);
+}
+
+.top {
+    text-align: center;
+}
+
+.one {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    position: relative;
+    left: 200px;
+    animation-name: myanimation;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes myanimation {
+    0% {
+        transform: skewX(30deg);
+    }
+    100% {
+        transform: skewX(-30deg);
+    }
+}
+
+.two {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background-color: grey;
+    position: relative;
+    left: 200px;
+    animation-name: animation;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes animation {
+    0% {
+        transform: skewY(30deg);
+    }
+    100% {
+        transform: skewY(-30deg);
+    }
+}
+
+.three {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    position: relative;
+    left: 200px;
+    animation-name: animation2;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: linear;
+}
+
+@keyframes animation2 {
+    0% {
+        transform: rotateZ(0deg);
+    }
+    100% {
+        transform: rotateZ(360deg);
+    }
+}
+
+.four {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background-color: grey;
+    position: relative;
+    left: 200px;
+    animation-name: animation3;
+    animation-duration: 2s;
+    transition-property: height;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes animation3 {
+    0% {
+        transform: rotateX(30deg);
+    }
+    100% {
+        transform: rotateX(60deg);
+    }
+}
+
+.five {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background-color: orangered;
+    position: relative;
+    left: 200px;
+    animation-name: animation5;
+    animation-duration: 2s;
+    transition-property: width;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes animation5 {
+    0% {
+        transform: rotateZ(0deg);
+    }
+    100% {
+        transform: rotateZ(360deg);
+    }
+}
+
+.six {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background-color: blueviolet;
+    position: relative;
+    left: 200px;
+    animation-name: animation6;
+    animation-duration: 2s;
+    transition-property: height;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes animation6 {
+    0% {
+        transform: rotateY(30deg);
+    }
+    100% {
+        transform: rotateY(80deg);
+    }
+}
+
+.ol {
+    margin-left: 300px;
+}
+
+.box {
+    margin: 20px;
+}
+
+.new {
+    margin-left: 400px;
+}
