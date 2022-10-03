@@ -1,0 +1,266 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+body {
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+
+#background {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    z-index: -1;
+}
+
+.background-img {
+    width: 100%;
+    height: 100%;
+}
+
+nav ul {
+    float: right;
+    margin-right: 120px;
+}
+
+nav ul li {
+    right: 120px;
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 14px;
+    font-size: 18px;
+}
+
+nav ul li a {
+    color: whitesmoke;
+}
+
+a:hover {
+    text-shadow: 1px 1px rgb(247, 241, 241);
+    transition: 0.5s;
+}
+
+.section {
+    display: flex;
+    position: absolute;
+    top: 290px;
+    left: 100px;
+    flex-direction: column;
+    padding: 20px;
+}
+
+#para {
+    color: white;
+    font-size: 14px;
+    line-height: 21px;
+}
+
+#sahara {
+    padding: 10px 0px;
+    font-size: 60px;
+    color: white;
+    font-family: "Times New Roman", Times, serif;
+    letter-spacing: 3px;
+}
+
+#btn {
+    position: absolute;
+    top: 69vh;
+    left: 120px;
+    padding: 7px 48px;
+    border-radius: 22px;
+    font-size: 13px;
+    border: none;
+    cursor: pointer;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: auto auto;
+    position: absolute;
+    left: 900px;
+    top: 20vh;
+    height: 450px;
+    width: 550px;
+    justify-content: center;
+    align-items: center;
+}
+
+.box1 {
+    position: relative;
+    transition: top ease-in 0.8s;
+    height: 200px;
+    width: 230px;
+    margin: 15px;
+}
+
+.box2 {
+    position: relative;
+    transition: top ease-in 0.8s;
+    height: 230px;
+    width: 230px;
+    margin: 15px;
+}
+
+.box3 {
+    position: relative;
+    transition: top ease-in 0.8s;
+    height: 210px;
+    width: 230px;
+    margin: 15px;
+}
+
+.box4 {
+    position: relative;
+    transition: top ease-in 0.8s;
+    height: 230px;
+    width: 230px;
+    margin: 15px;
+}
+
+#image1 {
+    height: 210px;
+    width: 210px;
+    border-radius: 10px;
+}
+
+#image2 {
+    height: 210px;
+    width: 210px;
+    border-radius: 10px;
+}
+
+#image3 {
+    height: 210px;
+    width: 210px;
+    border-radius: 10px;
+}
+
+#image4 {
+    height: 210px;
+    width: 210px;
+    border-radius: 10px;
+}
+
+.fa-bars {
+    position: absolute;
+    right: 80px;
+    top: 30px;
+    color: whitesmoke;
+    font-size: 20px;
+}
+
+.text-inside {
+    position: relative;
+    top: 40px;
+    text-align: center;
+    color: white;
+    font-size: 10px;
+}
+
+.box1:hover {
+    top: -10px;
+}
+
+.box2:hover {
+    top: -10px;
+}
+
+.box3:hover {
+    top: -10px;
+}
+
+.box4:hover {
+    top: -10px;
+}
+
+.logo {
+    position: relative;
+    height: 60px;
+    width: 60px;
+    background-color: orange;
+    left: 90px;
+    top: 20px;
+    opacity: 10%;
+}
+
+@media screen and (min-width: 518px) and (max-width: 856px) {
+    .container {
+        display: grid;
+        grid-template-columns: auto;
+        position: relative;
+        top: 120vh;
+        left: 20px;
+    }
+    .box1 {
+        height: 150px;
+        width: 420px;
+        transition: top ease-in 0.8s;
+    }
+    .box2 {
+        height: 150px;
+        width: 420px;
+    }
+    .box3 {
+        height: 150px;
+        width: 420px;
+    }
+    .box4 {
+        height: 150px;
+        width: 420px;
+    }
+    #image1 {
+        position: relative;
+        height: 150px;
+        top: -22px;
+        width: 420px;
+        z-index: -1;
+    }
+    #image2 {
+        position: relative;
+        height: 150px;
+        top: -22px;
+        width: 420px;
+        z-index: -1;
+    }
+    #image3 {
+        position: relative;
+        height: 150px;
+        top: -22px;
+        width: 420px;
+        z-index: -1;
+    }
+    #image4 {
+        position: relative;
+        height: 150px;
+        top: -22px;
+        width: 420px;
+        z-index: -1;
+    }
+    .text-inside {
+        position: relative;
+        top: 4px;
+        text-align: center;
+        color: white;
+        font-size: 10px;
+    }
+    .box1:hover {
+        top: -10px;
+    }
+    .box2:hover {
+        top: -10px;
+    }
+    .box3:hover {
+        top: -10px;
+    }
+    .box4:hover {
+        top: -10px;
+    }
+    #btn {
+        top: 620px;
+    }
+}
