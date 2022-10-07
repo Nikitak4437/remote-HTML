@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DAY4</title>
+    <style>
+        .centered {
+            position: absolute;
+            font-weight: bolder;
+            color: aliceblue;
+            top: 50%;
+            left: 20%;
+            transform: translate(-20%, -20%);
+        }
+        
+        .button {
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+        
+        .btn-group button {
+            background-color: #04AA6D;
+            border: 1px solid green;
+            color: white;
+            padding: 10px 24px;
+            cursor: pointer;
+            width: 20%;
+            display: block;
+            transform: translate(70%, 70%);
+            margin: 5px;
+        }
+        
+        .btn-group button:not(:last-child) {
+            border-bottom: none;
+        }
+        
+        .btn-group button:hover {
+            background-color: #3e8e41;
+        }
+        
+        .container {
+            word-spacing: 200px;
+        }
+        
+        .flex-container {
+            display: flex;
+            flex-wrap: nowrap;
+            background-color: DodgerBlue;
+        }
+        
+        .flex-container>div {
+            background-color: #f1f1f1;
+            width: 100px;
+            margin: 10px;
+            text-align: center;
+            line-height: 75px;
+            font-size: 30px;
+        }
+        
+        .button {
+            background-color: #4CAF50;
+            /* Green */
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+        
+        .button2 {
+            background-color: #008CBA;
+        }
+        /* Blue */
+        
+        .button3 {
+            background-color: #f44336;
+        }
+        /* Red */
+        
+        .button4 {
+            background-color: #e7e7e7;
+            color: black;
+        }
+        /* Gray */
+        
+        .button5 {
+            background-color: #555555;
+        }
+        /* Black */
+    </style>
+
+    </style>
+</head>
+
+<body>
+    <p>
+        Create masterhead - add background image and put a text at the center , with button below it
+    </p>
+    <div class="clas1">
+        <img src="./fruits.jpeg" alt="" style="width: 40%" />
+        <div class="centered">Centered</div>
+        <button class="submit">Submit</button>
+    </div>
+    <p>
+        Create header -- left side will have logo and right side will have 4 button
+    </p>
+    <div class="clas2">
+        <img src="./unitglo.png" alt="" />
+
+        <div class="btn-group">
+            <button class="btn1">Apple</button>
+            <button class="btn2">Samsung</button>
+            <button class="btn3">Sony</button>
+        </div>
+    </div>
+    <br>
+    <br>
+
+    <p>
+        Create 3 cards of height & width 200 px with texts in it , the card should be horizontally placed in web view and vertically in mobile view
+    </p>
+    <div class="card">
+        <img src="./avtar.png" alt="Avatar" style="width:200px" height="200px">
+        <img src="./avtar.png" alt="Avatar" style="width:200px" height="200px">
+        <img src="./avtar.png" alt="Avatar" style="width:200px" height="200px">
+
+
+        <div class="container">
+            <p>
+                card1 card2 card3</p>
+        </div>
+    </div>
+    <p>
+        Replicate the button on Masthead of PrepBytes, Change the background color of button for mobile view and ipad
+    </p>
+    <button class="button">Green</button>
+    <button class="button button2">Blue</button>
+    <button class="button button3">Red</button>
+    <button class="button button4">Gray</button>
+    <button class="button button5">Black</button>
+
+
+    <p>Write code to show implementation of flex</p>
+    <div class="flex-container">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+    </div>
+
+</body>
+
+</html>
