@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DAY 5</title>
+    <style>
+        div {
+            width: 100px;
+            height: 150px;
+            background: red;
+            transition: width 3s;
+        }
+        
+        div:hover {
+            width: 300px;
+        }
+        
+        div.a {
+            width: 150px;
+            height: 80px;
+            background-color: yellow;
+            -ms-transform: rotate(20deg);
+            transform: rotate(20deg);
+        }
+        
+        .z {
+            background-color: aqua;
+            margin: 5px;
+        }
+        
+        p.intro::first-letter {
+            color: blue;
+            font-size: 200%;
+        }
+        
+        p.intro::first-line {
+            color: green;
+            font-variant: small-caps;
+        }
+        
+        .grid-container {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            background-color: #2196f3;
+            padding: 5px;
+        }
+        
+        .grid-item {
+            background-color: rgba(255, 255, 255, 0.8);
+            border: 1px solid rgba(0, 0, 0, 0.8);
+            padding: 5px;
+            font-size: 30px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <p class="clas1">1) Show implementation of transition</p>
+    <div></div>
+    <div></div>
+    <p>2) Show implementation of transformation</p>
+    <br />
+    <div class="a">Hello friends</div>
+    <br />
+
+    <p>3) Show implementation of grid</p>
+    <div class="grid-container">
+        <div class="grid-item">1</div>
+        <div class="grid-item">2</div>
+        <div class="grid-item">3</div>
+    </div>
+    <p>4) What are CSS combinators</p>
+    <p>
+        The descendant selector matches all elements that are descendants of a specified element.
+    </p>
+
+    <div class="z">
+        <p>Paragraph 1 in the div.</p>
+
+        <p>Paragraph 2 in the div.</p>
+
+        <section>
+            <p>Paragraph 3 in the div.</p>
+        </section>
+    </div>
+
+    <p>Paragraph 4. Not in a div.</p>
+    <p>Paragraph 5. Not in a div.</p>
+    <p>5) What are pseudo selectors in CSS</p>
+    <p class="intro">This is an introduction.</p>
+    <p>hello frieds i am nikita i am from latur.</p>
+</body>
+
+</html>
