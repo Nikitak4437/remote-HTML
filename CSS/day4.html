@@ -9,10 +9,11 @@
     <style>
         .centered {
             position: absolute;
-            font-weight: bolder;
-            color: aliceblue;
+            font-size: xx-large;
+            font-weight: 900px;
+            color: rgb(1, 5, 9);
             top: 50%;
-            left: 20%;
+            left: 15%;
             transform: translate(-20%, -20%);
         }
         
@@ -29,7 +30,7 @@
         }
         
         .btn-group button {
-            background-color: #04AA6D;
+            background-color: #04aa6d;
             border: 1px solid green;
             color: white;
             padding: 10px 24px;
@@ -52,23 +53,8 @@
             word-spacing: 200px;
         }
         
-        .flex-container {
-            display: flex;
-            flex-wrap: nowrap;
-            background-color: DodgerBlue;
-        }
-        
-        .flex-container>div {
-            background-color: #f1f1f1;
-            width: 100px;
-            margin: 10px;
-            text-align: center;
-            line-height: 75px;
-            font-size: 30px;
-        }
-        
         .button {
-            background-color: #4CAF50;
+            background-color: #4caf50;
             /* Green */
             border: none;
             color: white;
@@ -82,7 +68,7 @@
         }
         
         .button2 {
-            background-color: #008CBA;
+            background-color: #008cba;
         }
         /* Blue */
         
@@ -101,8 +87,40 @@
             background-color: #555555;
         }
         /* Black */
-    </style>
-
+        
+        #main {
+            width: 200px;
+            height: 200px;
+            border: 1px solid #c3c3c3;
+            display: flex;
+            flex-flow: row-reverse wrap;
+        }
+        
+        #main div {
+            width: 50px;
+            height: 50px;
+        }
+        
+        .submit {
+            margin-left: 17%;
+        }
+        
+        .clas2 {
+            display: flex;
+        }
+        
+        .btn-group {
+            width: 50%;
+        }
+        
+        .card {
+            display: flex;
+        }
+        
+        .avatar {
+            width: 300px;
+            text-align: center;
+        }
     </style>
 </head>
 
@@ -111,7 +129,9 @@
         Create masterhead - add background image and put a text at the center , with button below it
     </p>
     <div class="clas1">
-        <img src="./fruits.jpeg" alt="" style="width: 40%" />
+        <div>
+            <img src="./fruits.jpeg" alt="" style="width: 40%" />
+        </div>
         <div class="centered">Centered</div>
         <button class="submit">Submit</button>
     </div>
@@ -127,21 +147,24 @@
             <button class="btn3">Sony</button>
         </div>
     </div>
-    <br>
-    <br>
+    <br />
+    <br />
 
     <p>
         Create 3 cards of height & width 200 px with texts in it , the card should be horizontally placed in web view and vertically in mobile view
     </p>
     <div class="card">
-        <img src="./avtar.png" alt="Avatar" style="width:200px" height="200px">
-        <img src="./avtar.png" alt="Avatar" style="width:200px" height="200px">
-        <img src="./avtar.png" alt="Avatar" style="width:200px" height="200px">
-
-
-        <div class="container">
-            <p>
-                card1 card2 card3</p>
+        <div class="avatar">
+            <img src="./avtar.png" alt="Avatar" style="width: 200px" height="200px" />
+            <p>card1</p>
+        </div>
+        <div class="avatar">
+            <img src="./avtar.png" alt="Avatar" style="width: 200px" height="200px" />
+            <p>card2</p>
+        </div>
+        <div class="avatar">
+            <img src="./avtar.png" alt="Avatar" style="width: 200px" height="200px" />
+            <p>card3</p>
         </div>
     </div>
     <p>
@@ -153,21 +176,17 @@
     <button class="button button4">Gray</button>
     <button class="button button5">Black</button>
 
-
     <p>Write code to show implementation of flex</p>
-    <div class="flex-container">
-        <div>1</div>
-        <div>2</div>
-        <div>3</div>
-        <div>4</div>
-        <div>5</div>
-        <div>6</div>
-        <div>7</div>
-        <div>8</div>
-        <div>9</div>
-        <div>10</div>
-    </div>
+    <h1>The flex-flow Property</h1>
 
+    <div id="main">
+        <div style="background-color: coral">A</div>
+        <div style="background-color: lightblue">B</div>
+        <div style="background-color: khaki">C</div>
+        <div style="background-color: pink">D</div>
+        <div style="background-color: lightgrey">E</div>
+        <div style="background-color: lightgreen">F</div>
+    </div>
 </body>
 
 </html>
