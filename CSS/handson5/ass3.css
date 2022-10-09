@@ -4,11 +4,11 @@
 }
 
 body {
-    background-image: url("./sky.jpg");
+    /* background-image: url("./sky.jpg"); */
     overflow: hidden;
-    border-top: 10px solid white;
+    /* border-top: 10px solid white;
     border-left: 10px solid orange;
-    border-right: 10px solid green;
+    border-right: 10px solid green; */
 }
 
 h1 {
@@ -35,35 +35,36 @@ h1 {
 }
 
 #city {
-    width: auto;
-    height: 58vh;
+    width: 200%;
+    height: 70vh;
     position: absolute;
     animation: infinite 5s city linear reverse;
 }
 
 @keyframes city {
     from {
-        left: -100px;
+        left: -300px;
     }
     to {
-        left: 100px;
+        left: 0px;
     }
 }
 
-#road {
-    width: auto;
-    height: 37.5vh;
+#sun {
+    width: 100px;
+    height: 100px;
+    margin-left: 90%;
+    float: right;
     position: absolute;
-    top: 430px;
-    animation: infinite 4s road linear reverse;
+    animation: infinite 50s sun linear reverse;
 }
 
-@keyframes road {
+@keyframes sun {
     from {
-        left: -2000px;
+        left: -200px;
     }
     to {
-        left: 0;
+        left: 0px;
     }
 }
 
@@ -75,19 +76,21 @@ h1 {
 }
 
 #flag {
-    width: 75px;
-    height: 75px;
+    width: 60px;
+    height: 60px;
     position: absolute;
-    left: 755px;
-    bottom: 248px;
+    left: 54%;
+    bottom: 274px;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
 }
 
 #w1 {
     width: 60px;
     height: 60px;
     position: absolute;
-    left: 515px;
-    bottom: 170px;
+    left: 40.5%;
+    bottom: 166px;
     animation: infinite 1s wheel linear;
 }
 
@@ -95,8 +98,8 @@ h1 {
     width: 60px;
     height: 60px;
     position: absolute;
-    left: 750px;
-    bottom: 170px;
+    left: 56.5%;
+    bottom: 166px;
     animation: infinite 1s wheel linear;
 }
 
@@ -109,11 +112,6 @@ h1 {
     }
 }
 
-.container {
-    width: calc(100vw - 20px);
-    height: 75vh;
-    position: absolute;
-    left: 0;
-    border-left: 10px solid orange;
-    border-right: 10px solid green;
+body {
+    background-color: #76b343;
 }
