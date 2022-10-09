@@ -60,7 +60,7 @@
     position: relative;
     left: 200px;
     animation-name: animation2;
-    animation-duration: 2s;
+    animation-duration: 2.9s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
     animation-direction: linear;
@@ -68,10 +68,14 @@
 
 @keyframes animation2 {
     0% {
-        transform: rotateZ(0deg);
+        -webkit-transform: rotate(0deg);
+    }
+    83% {
+        /*2.4 / 2.9 = 0.827*/
+        -webkit-transform: rotate(360deg);
     }
     100% {
-        transform: rotateZ(360deg);
+        -webkit-transform: rotate(360deg);
     }
 }
 
