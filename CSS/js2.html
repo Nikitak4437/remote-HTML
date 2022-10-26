@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Decision Making</title>
+</head>
+
+<body>
+    <h1>Decision Making</h1>
+    <p>
+        que1) Write a program to make a simple calculator using switch statement that takes operator and two numbers from user and print the result after operation.
+    </p>
+    <pre>
+        
+const Calculator = (A, B, C) => 
+{
+	switch(A)
+	{
+	  case "+":
+	    return B + C;
+	    break;
+	    	  case "-":
+	    return B - C;
+	    break;
+	    	  case "*":
+	    return B * C;
+	    break;
+	  case "/":
+	    return B / C;
+	    break;
+}  
+};
+    </pre>
+    <p>
+        que2) Write a program that takes a number and prints whether the number is divisible by 6 and 9 or not.
+    </p>
+    <pre>
+        
+const Check_divisibility = (N) => {
+    if(N%6==0 && N%9==0)
+    {
+      return "Divisible by both";
+    }
+    else{
+      return "Not Divisible by both";
+    }
+    };
+  </pre
+    >
+    <p>
+      que3) You are given an integer A , denoting the age of a person, and your
+      task is to determine whether he/she is eligible to vote or not.
+    </p>
+    <pre>
+        const isEligible = (A) => {
+            if(A>18 && A<120)
+            {
+              return "Eligible for voting";
+            }
+            else
+            {
+              return "Not Eligible for voting";
+            }
+        };
+    </pre>
+    <p>
+        que4) PrepBuddy wants you to get familiar with various Relational operators. He provides you with two integer values X and Y and asks you to find the relation between them.
+    </p>
+    <pre>
+            
+const findRelation = (x,y) => {
+    if (1 <= x && y<=500){
+     if(x < y)
+     {
+       return x+" is smaller than "+y;
+     }
+     else if(x > y)
+     {
+       return x+" is greater than "+y;
+     }
+     else if (x == y)
+     {
+       return x+ " is equal to "+y;
+     }
+    }
+  };
+ </pre
+    >
+    <p>
+      que5) Your school has the following grading system based upon the marks(M)
+      obtained by a student:
+    </p>
+    <pre>
+        
+const findGrades = (a) => {
+    if(0 <= a && a<=50)
+    {
+      if(a <= 10)
+      {
+        return "E";
+      }
+      else if(a>=11 && a<=20)
+      {
+        return "D";
+      }
+           else if(a>=21 && a<=30)
+      {
+        return "C";
+      }
+           else if(a>=31 && a<=40)
+      {
+        return "B";
+      }
+            else if(a>=41 && a<=50)
+      {
+        return "A";
+      }
+  }
+ }; 
+    </pre>
+    <p>
+        que6) You are provided with a table containing some characters and their corresponding values. Your task will be to find the value from the table corresponding to an input character and return it.
+    </p>
+    <pre>
+        const getValue = (a) => {
+           if(a=="p" || a=="P") 
+           {
+           return "PrepBytes";
+           }
+           else if(a=="z" || a=="Z")
+           {
+             return "Zenith";
+           }
+           else if(a=="e" || a=="E")
+           {
+             return "Expert Coder";
+           }
+           else if(a=="d" || a=="D")
+           {
+             return "Data Structure";
+           }
+        };
+        </pre
+    >
+    <p>
+      que7) Take three numbers and print the largest number among them if all of
+      three are same print - 1
+    </p>
+    <pre>
+        
+const Max_out_of_three = (A,B,C) => {
+    if(A>B && A>C)  
+    {
+      return A;
+    }
+       if(B>A && B>C)  
+    {
+      return B;
+    }
+       if(C>A && C>B)  
+    {
+      return C;
+    }
+    else{
+      return "-1";
+    }
+};
+    </pre>
+    <p>Que8) You are given 3 distinct integers X,Y,and Z, and your task is to find and return the second smallest integer among the three provided integers.</p>
+    <pre>
+    
+const findSndSmallest = (x,y,z) => {
+    if(x>=1 && y>=1 && z>=1 && x<=500 && y<=500 && z<=500)
+    {
+      if(x!=y && y!=z && x!=z)
+      {
+        // for x is 2nd smallest or not 
+        if((x<y && x >z) || (x<z && x >y)){
+          return x;
+        }
+        // for y is 2nd smallest or not 
+        if((y<x && y >z) || (y<z && y >x)){
+          return y;
+        }
+        // for z is 2nd smallest or not 
+        if((z<y && z >x) || (x>z && z >y)){
+          return z;
+        }
+        
+      }
+    }
+ }; 
+</pre>
+    <p>Que9) Write a program takes takes three angles and checks whether the triangle is acute or obtuse.
+    </p>
+    <pre>
+    
+const Triangle_Check = (A,B,C) => {
+    if(B>=0 && B>=0 && C>=0 && A<=180 && B<=180 && C<=180)
+    if(A>90 || B>90 || C>90)
+    {
+      return "obtuse";
+    }
+ else
+ {
+   return "acute";
+ }
+     
+ }; 
+</pre>
+</body>
+
+</html>
