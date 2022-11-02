@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>javascript 3</title>
+</head>
+
+<body>
+    <p>
+        que1] Take a number from the user and print the count of digits in that number.
+    </p>
+    <pre>
+    
+const Find_Digits = (N) => 
+{
+	 return N.toString().length;
+};
+</pre
+    >
+    <p>
+      que2] Among all the digits from 0−9, PrepBuddy likes number 5. He has a
+      number and wants you to find out the number of times 5 occurred in the
+      given number.
+    </p>
+    <pre>
+  
+        const Find_Five = (N) => 
+        {
+            
+        let count = 0;
+        let str = N+"";
+        let letter = "5";
+            // looping through the items
+            for (let i = 0; i < str.length; i++) {
+        
+                // check if the character is at that position
+                if (str.charAt(i) == letter) {
+                    count += 1;
+                }
+            }
+            return count;   
+        };
+        </pre
+    >
+
+    <p>
+      Que3] You are given an integer N , and your task is to find the sum of all
+      the even integers starting from 1 upto N ( N inclusive).
+    </p>
+    <pre>
+        
+const findSum = (n) => {
+  
+    var son=0;
+    for(var i=0; i<=n; i++)
+    {
+      if (i%2==0)
+      {
+        son=son + i;
+      }
+    }
+    return son;
+  };  
+    </pre>
+    <p>
+        Que4] Write a program that takes a number from the user and get the sum of the digits present in the number.
+    </p>
+    <pre>
+        
+const Number_Sum = (N) => 
+{
+  var son = 0;
+	for(var i=0; i<(N+"").length; i++)
+	{
+	  son=son+parseInt((N+"").charAt(i));
+	}
+	return son;
+};  </pre
+    >
+
+    <p>
+      Que5] Write a program which takes a number from user and print all odd
+      numbers in between 2 and N, but print 2 first.
+    </p>
+    <pre>
+    
+const Print_Odd = (N) => 
+{
+	
+if(N>-2 && N<=100){
+  var odd="";
+  console.log("2")
+  for(var i=2; i<=N; i++)
+  {
+    if (i%2!=0)
+    {
+  console.log(i);
+      // odd=odd+","+i;
+    }
+  }
+  //return "2"+odd;
+}
+};
+ </pre
+    >
+
+    <p>
+      Que6] Write a program which ask user for no of lines and print a pattern
+      using an asterik .
+    </p>
+    <pre>
+    
+const Print_pattern = (N) => 
+{
+  if(N>=1 && N<=100){
+  var star = "";
+  for(var i= 0;i<=N;i++){
+    star = "";
+  for(var j=0;j<=i;j++){
+    star=star+"*";
+    
+  }
+  console.log(star);
+  }
+}
+};
+</pre
+    >
+    <p>
+      Que7] Write a program which takes a number from user and check whether
+      number is prime number or not a prime number.
+    </p>
+    <pre>
+        
+const Prime_Check = (N) => 
+{
+  if(N>=1 && N<=10000)
+  {
+	 var isPrime=0;
+	  for (let i = 1; i <= N; i++) {
+        if (N % i === 0) {
+            isPrime++;
+            //break;
+        }
+    }
+    if(isPrime==2){
+     return "YES";
+    }
+    else{
+   // console.log(NO);
+      return "NO";
+    }
+  }
+};
+    </pre>
+    <p>
+        Que8] You are given an integer N , and your task is to print all the integers starting from 1 till N ( N inclusive).
+    </p>
+    <pre>
+        
+const printNumbers = (n) => {
+    for (let i=1;i <=n;i++ ){
+      console.log(i);
+    }
+};
+    </pre>
+    <p>
+        QUE9] Write a program which takes a number from user and print the table.
+    </p>
+    <pre>
+        
+const Print_Table = (N) => 
+{
+	for(let i = 1 ; i <=10;i++ ){
+	  console.log(N+" * "+i+" = "+ (N*i));
+	}
+};
+    </pre>
+</body>
+
+</html>
