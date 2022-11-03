@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Handson5</title>
+</head>
+
+<body>
+    <p>
+        1] You are given a string S , and your task is to return an array B ( having a size of 2 ) , where B [ 0 ] contains the count of character A (uppercase) in string S and B [ 1 ] contains the count of character D (uppercase) in string S.
+    </p>
+    <pre>
+        const countCharacters = (S) => 
+        {
+          var B = [];
+            B[0]=[...S].filter(ch=>ch =="A").length;
+            B[1]=[...S].filter(ch=>ch =="D").length;
+            return B;
+        };
+         
+        </pre
+    >
+    <p>
+      2] Tina is given a string S which contains the first letter of all the
+      student names in her class. She got a curiosity to check how many people
+      have their names starting from the same alphabet. So given a string S ,
+      she decided to write a code that finds out the count of characters that
+      occur more than once in the string.
+    </p>
+    <pre>
+        var Count_Occ = (s) => 
+        {
+            var B = [];
+            // B[0]=[...S].filter(ch=>ch =="A").length;
+            // B[1]=[...S].filter(ch=>ch =="D").length;
+           [...s].filter(function(ch) {
+          var count = 0 ; 
+          count = (s.match(new RegExp(ch, "g")) || []).length;
+          if(count>1)
+          B[ch]= count;
+          //return {ch:count}
+             });
+             let newObj = [];
+        
+         Object.keys(B).sort()
+            .forEach((key) => {
+             // console.log(key);
+              newObj[key] = B[key];
+            });
+            B= newObj;
+           var op = "";
+             for (var k in B){
+                   if (B.hasOwnProperty(k)) {
+                     op=op+""+k+""+B[k];
+                    }
+             }
+             B.forEach((item,index)=>{
+               op=op+item+index;
+             });
+             
+         return op;
+         };
+         
+        </pre
+    >
+    <p>
+      3] You are given a string S containing both uppercase and lowercase
+      letters. You need to find out the number of vowels in the given string.
+    </p>
+    <pre>
+        var Count_Vowels= (S) => 
+        {
+          const V = S.match(/[aeiou]/gi).length;
+          return V;
+         
+        };
+         
+        </pre
+    >
+    <p>
+      4] You are given two strings S 1 and S 2 (containing both uppercase and
+      lowercase letters), You need to retrun a string which is the concatenation
+      of both the given strings.
+    </p>
+    <pre>
+        var Concatenate_Strings = (S1, S2) => 
+        {
+          var a = S1.concat(S2);
+          return a;
+        };
+         
+        </pre
+    >
+    <p>
+      5] You are given a string S , and your task is to return the length of the
+      string S
+    </p>
+    <pre>
+        const findLength = (S) => 
+        {
+          var length = 0;
+          while(S[length] !== undefined)
+          {
+          length++; 
+          }
+          return length;
+        };
+         
+        </pre
+    >
+    <p>
+      6] You are given a string S consisting of two letters A and D ,where each
+      character represent the winner of N games played between Aditya and
+      Danish, where letter A represents the win of Aditya and letter D
+      represents the win of Danish. You need to find out the that which player
+      wins the maximum number of games or there is a draw between them.
+    </p>
+    <pre>
+ 
+        var Game_Winner = (S) => 
+        {
+           let countA= S.match(/[A]/gmi).length;
+          let countD= S.match(/[D]/gmi).length;
+          if(countA > countD)
+          {
+            return 'Aditya';
+          }
+           else if(countA < countD)
+          {
+            return 'Danish';
+          }
+          else
+          {
+            return 'Draw';
+          } 
+        };
+         
+        </pre
+    >
+    <p>
+      7] You are given two strings S and P , and your task is to concatenate
+      them and return the concatenated string.
+    </p>
+    <pre>
+        const joinStrings = (S, P) => 
+        {
+           let com = S.concat(P);
+           return com;
+         };
+        </pre
+    >
+    <p>
+      8] You are given a string S , Your task is to check wether the given
+      string is a P a l i n d r o m e or not. A P a l i n d r o m e is a string,
+      which turnout same when read in reverse direction. Example: "naman" is a
+      Palindrome. String can contain both upppercase lowercase letters.
+    </p>
+    <pre>
+ 
+        var Palin_Check = (str) =>
+        {
+                 let a = 0;
+             let b = str.length - 1;
+             
+             while(a < b)
+              {
+               if(str[a] === str[b])
+                 {
+                   a++;
+                   b--;
+                 }
+                 else 
+                   {
+                     return "False";
+                   }
+              }
+              return "True";
+        };
+        
+        </pre
+    >
+    <p>
+      9] You are given a string S , Your task is to Reverse the string. String
+      can contain both upppercase lowercase letters.
+    </p>
+    <pre>
+        var Reverse_String = (str) => 
+        {
+         const r = str.split("");
+         const rarr = r.reverse();
+         const jarr = rarr.join("");
+         return jarr;
+        
+        };
+    </pre>
+    <p>
+        10] You are given two strings S 1 and S 2 , Your task is to print Y E S if both strings are same else print N O .
+    </p>
+    <pre>
+        var String_Match = (S1,S2) => 
+        {
+              if(S1 === S2)
+              {
+                return "YES";
+              }
+              else{
+                return "NO";
+              }
+            
+        };
+    </pre>
+    <p>
+        11] You are given a string S , along with a pattern string and a text string. You need to repalce the pattern string in S to the text string.
+    </p>
+    <pre>
+        var Replace = (S, pattern , text) => 
+        {
+           const R = S.replace(pattern,text);
+           return R;
+        
+        
+        };
+    </pre>
+    <p>
+        12] You are given a string S , Your task is to split the string with respect to spaces
+    </p>
+    <pre>
+        var Split_the_string = (S) => 
+        {
+         const s = S.split();
+        return s;
+        };
+    </pre>
+    <p>
+        13] You are given a string S containing both uppercase and lowercase letters. You need to find out the number of vowels and the number of consonants in the given string.
+    </p>
+    <pre>
+        var Count_Vowels= (S) => 
+        {
+          const V = S.match(/[aeiou]/gi).length;//
+          return V; 
+            
+        };
+        var Count_Consonants= (S) => 
+        {
+          let ans = S.split('').filter(e =>
+          e.match(/[^aeiou]/) !==null).length;
+          return ans;
+              
+        };
+   </pre
+    >
+  </body>
+</html>
