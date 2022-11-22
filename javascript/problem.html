@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>handson 7</title>
+</head>
+
+<body>
+    <p>
+        [1] PrepBuddy has an analog clock which consists of two hands one for hour and another for minute. She wants to calculate the shorter angle formed between hour and minute hand at any given time.
+    </p>
+    <pre>
+        var Minimal_Angle = (h, m) => 
+        {
+        let degree_in_hour=0.5;
+        let degree_in_minute=6;
+        if(h>12)
+        {
+          h=h-12;
+        }
+        let total_degree_by_minute_hand=degree_in_minute*m;
+        let total_degree_by_hour_clock=(h*60+m)*degree_in_hour;
+        let angle=Math.abs(total_degree_by_minute_hand - total_degree_by_hour_hand);
+          if(angle>180)
+          {
+            angle=360-angle;
+          }
+          return angle;
+        };
+    </pre>
+    <p>
+        [2] Write a program which takes an year N as input from the user and find out whether the given year is a Leap Year or not.
+    </p>
+    <pre>
+ 
+        var Check_Leap = (year) => 
+        {
+             if ((0 === year % 4) && (0 !== year % 100) || (0 === year % 400)) {
+                return 'Leap Year';
+            } else {
+                return 'Non Leap Year';
+            }
+        };
+    </pre>
+    <p>
+        [3] Have you heard of Perfect numbers? If not let me tell you what is it, Perfect Numbers are integers that are equal to the sum of all its divisors except that number itself. Now, You are given an integer N , write a program to check whether the given
+        number is a Perfect Number or not.
+    </p>
+    <pre>
+ 
+var Perfect_Check = (N) => 
+{
+   let sum=0;
+   for(let i=1;i<=N;i++)
+   {
+     if(N%i==0)
+     {
+       sum+=i;
+     }
+   }
+  if(sum==N)
+  {
+    return "YES";
+  }
+  else
+    return "NO";
+  };
+  </pre
+    >
+    <p>
+      [4] Write a program which takes a numebr N as input from the user and You
+      need to reverse the number.
+    </p>
+    <pre>
+ var Reverse_Number = (N) => 
+        {
+          let x=N+"";
+        return parseInt (x.split('').reverse().join(''))
+        
+        };
+    </pre>
+    <p>
+        [5] You are given two strings S 1 and S 2 , you need to check whether the string S1 is a substring of string S2 or not
+    </p>
+    <pre>
+        var Substring_Check = (s1, s2) => 
+        {
+           var res = s1.includes(s2);
+           if(res === true)
+           {
+             return "YES";
+           }
+           else
+           {
+             return "NO";
+           }
+        };
+    </pre>
+</body>
+
+</html>
