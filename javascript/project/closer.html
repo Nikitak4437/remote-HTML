@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+</head>
+
+<body>
+
+    <p>question number1</p>
+    <pre>
+      function counter(){
+       var counter = 0;
+
+     function IncreaseCounter() {
+        return counter += 1;
+    };
+
+    return IncreaseCounter;
+  }
+
+    var counter = counter();
+    alert(counter());//1
+    alert(counter());//2
+    alert(counter());//3
+    alert(counter());//4
+</pre>
+
+
+    <p>question number 2</p>
+
+    <pre>let count = 0;
+    (function () {
+     if (count === 0) {
+     let count = 1;
+     console.log(count); //1
+   }
+   console.log(count); //0
+ })();
+ </pre>
+
+
+
+    <p>question number 3</p>
+    <pre>
+for (var i = 0; i < 3; i++) {
+    setTimeout(function log() {
+      console.log(i); 
+    }, 1000);
+  }
+</pre> Output : - 3 3 3
+
+
+    <p>question number 4 </p>
+    <p>Write a code to calculate area of a rectangle using inner function. In this case outer function should accept parameter length and inner function should accept parameter breadth.</p>
+
+    <pre>function outerFunction(){
+    let length = 5;
+    function innerfunction(){
+        let breadth = 10;
+       return length * breadth;
+    }
+    return innerfunction;
+}
+const incre = outerFunction();
+console.log( incre());</pre>//50
+
+
+
+
+    <p> question number 5</p>
+    <p>Take a variable in outer function and create an inner function to increase the counter every time it is called</p>
+
+    <pre>function outerFunction(){
+    let counter = 0;
+    function innerfunction(){
+      return counter += 1;
+    }
+    return innerfunction;
+  }
+   const incre = outerFunction();
+   console.log( incre());
+   console.log( incre());
+   </pre>
+
+
+    <p>question number 6</p>
+    <pre>var a = 12;
+   (function () {
+  alert(a);
+})();"</pre> Output :- 12
+
+    <p>question number 7</p>
+    <pre>
+"var a = 10;
+var x = (function () {
+  var a = 12;
+  return function () {
+    alert(a);
+  };
+})();
+x();
+</pre> Output :- 12
+    <p>question number 8</p>
+    <pre>var globalVar = "xyz";
+
+(function outerFunc(outerArg) {
+    var outerVar = 'a';
+    
+    (function innerFunc(innerArg) {
+    var innerVar = 'b';
+    
+    console.log( "outerArg = " + outerArg + "\n" +
+        "innerArg = " + innerArg + "\n" +
+        "outerVar = " + outerVar + "\n" +
+        "innerVar = " + innerVar + "\n" +
+        "globalVar = " + globalVar);
+    
+    })(456);
+})(123);</pre> Output :- outerArg = 123 innerArg = 456 outerVar = a innerVar = b globalVar = xyz
+    </pre>
+</body>
+
+</html>
