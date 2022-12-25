@@ -1,7 +1,7 @@
 function show_time() {
   var date = new Date();
   document.getElementsByClassName("time_hour")[0].innerHTML =
-    (date.getHours() % 12) + " Hours";
+    date.getHours() > 12 ? date.getHours() % 12 : date.getHours() + " Hours";
   document.getElementsByClassName("time_minute")[0].innerHTML =
     date.getMinutes() + " mins";
   document.getElementsByClassName("time_second")[0].innerHTML =
