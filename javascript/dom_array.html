@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+</head>
+<style>
+    body {
+        color: white;
+        font-size: 20px;
+        background-color: gray;
+    }
+</style>
+
+<body>
+    <pre>
+        Q.1 Write the code to access element which is having id as "text"
+        Ans:-  <div id="text">Hello</div>
+        let a = document.getElementById("text")
+        console.log(a.innerText);
+
+        Q.2 Write the code to access element which is having tag as "h1"
+        Ans:- document.getElementByTagName('h1')
+
+        Q.3 Write the code to access element which is having class as "box"
+        Ans:- document.getElementsByClassName('box')
+
+        Q.4 "<h1>Hello </h1>"
+             Change the heading from ""Hello"" to "Hello World" using DOM functions
+        Ans:- let f1 = document.getElementByTagName('h1')
+              console.log(f1[0]);
+              f1[0].innerText = "Hello World"
+
+        Q.5 Create three cards on HTML page and arrange them using flex property in row or horizontal 
+        direction and also create button at the bottom named "Change Flex direction".
+         When user clicks on this button, the cards arrangement should be changed to vertical direction.
+        Ans:- 
+<div class="flexCon">
+           <div class="flexbox">FirstBox</div>
+           <div class="flexbox">SecondBox</div>
+           <div class="flexbox">ThirdBox</div>
+        </div>
+       <button onclick="changebox()">Click Me</button>
+       <br>
+   function changebox(){
+           const element1 = document.getElementsByClassName('flexCon');
+         
+           element1[0].style.flexDirection = "column";
+           console.log(element1[0]);
+       }
+        .flexCon{
+           display: flex;
+       }
+       .flexbox{
+           width: 100px;
+           color: red;
+           padding: 30px;
+           background-color: yellow;
+           border: 2px green solid;
+       }
+
+Q.6 What’s the difference between window vs document?
+   Ans:-The Window interface represents a window containing a DOM document;
+       the document property points to the DOM document loaded in that window.
+
+       window :- window is the execution context and global object for that context's JavaScript
+
+       document :- document contains the DOM, initialized by parsing HTML
+  
+   Q.7 "<h1>Hello </h1>
+
+        Add one style attribute and give text color as red and id attribute and give the id value as
+        "heading" in the above given h1 tag using DOM functions"
+   Ans:- const element = document.getElementByTagName('h1');
+         element[0].innerText="Hello";
+         element[0].style.color="red";
+         element[0].id="heading";
+
+   Q.8 Create an HTML page having content as Hello world and a button named Replace Text.
+       When user will click on this button page content should be changed to "Welcome to Elevation academy"
+
+   Ans:- <h1 class="text">Hello World</h1>
+        <button onclick="ChangeText()">Replace Text</button>
+
+
+         function ChangeText(){
+           const text=document.getElementsByClassName('text');
+           text[0].innerText="Welcome to Elevation";
+           text[0].style.color="orange";
+          }
+        
+
+
+   Q.9 Write code to implement timer clock using JS -- display HH:MM:SS -- the time should keep updating every second
+   Ans:-  <div class="main">
+       <span id="hours" class="timer"></span>
+       <span id="mins" class="timer"></span>
+       <span id="secs" class="timer"></span> 
+       <span id="meridian" class="timer"></span> 
+   </div>
+.main{
+       background-color: black;
+       width: 150px;
+       height: 150px;
+       border-radius: 50%;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+     }
+     .timer{
+       color: wheat;
+       font-size: 20px;
+     }
+
+
+
+   function clockTimer(){
+ 
+       const date=new Date();
+       
+       let hour = date.getHours();
+       let min = date.getMinutes();
+       let sec = date.getSeconds();
+       let meridian = document.getElementById('meridian');
+     
+       let meridian;
+      if (hour >= 12) {
+        meridian = "PM"
+         hour -= 12;
+       }else {
+         meridian = "AM"
+        }
+
+     hour = hour < 10 ? "0" + hour : hour;
+     min = min < 10 ?  "0" + min : min; 
+     sec = sec < 10 ? sec = "0" + sec : sec;
+     
+     
+       let hourTime = document.getElementById('hours');
+       hourTime.innerHTML = `${hours}:`
+
+       let minTime = document.getElementById('mins');
+       minslot.innerHTML = `${mins}:`
+       let secTime = document.getElementById('secs');
+       secTime.innerHTML = meridian;
+       
+     }
+     setInterval(()=>{
+       clockTimer();
+     },1000);
+
+   Q.10 Create a select drop down for selecting Year 20-21, 21-22 etc. Print the item text selected
+   Ans:-  <select name="" id="textYear">
+             <option value="20-21">Year 20-21</option>
+             <option value="21-22">Year 21-22</option>
+           </select> <br>
+
+
+           <button onclick="Print()" class="btn">Click </button>
+           <p>Select text and print this.
+           <span id="text2"></span>
+           </p>
+           function getOption(){
+              let result=document.getElementById("text1");
+               let  result1=result.value
+               document.getElementById("text2").innerText=result2
+             }
+       
+
+    </pre>
+</body>
+
+</html>
