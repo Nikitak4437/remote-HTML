@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+
+</head>
+
+<body>
+    <h1>Array of objects</h1>
+    Question. "let studentRecords = [ <br /> {name: 'John', id: 123, marks : 98 }, <br /> {name: 'Baba', id: 101, marks : 23 }, <br /> {name: 'yaga', id: 200, marks : 45 }, <br /> {name: 'Wick', id: 115, marks : 75 } ] "
+    </h4>
+    <br>
+    <br>
+    <b>Q1.</b>
+    <b>
+      We are interested in retrieving only the students' names; all the names
+      should be in caps.
+    </b>
+    <br /><br />
+    <b></b>const result = studentRecords.map((x)=> console.log(x.name.toUppercase())) <br /><br />
+
+    <b>Q2.</b>
+    <b>
+      Suppose we have the same dataset as above but this time we want to get the
+      details of students who scored more than 50 marks.
+    </b>
+    <br /><br />
+    <b></b>const result = studentRecords.filter((m)=> m.marks>50)
+    <br /> console.log(result) <br /><br />
+
+    <b>Q3.</b>
+    <b>
+      Retrieve the details of students who scored more than 50 marks and have
+      IDs greater than 120.
+    </b>
+    <br /><br />
+    <b></b>const result = studentRecords.filter((y)=> y.marks>50 && y.id>120) <br /> console.log(result) <br /><br /> let std1 = [ <br /> {name: 'John', id: 123, marks : 98 },<br /> {name: 'Baba', id: 101, marks : 23 },<br /> {name: 'yaga', id: 200, marks
+    : 45 },<br /> {name: 'Wick', id: 115, marks : 75 } ] <br /> for(let i=0;i
+    <=std1.length;i++){<br /> if(std1[i].marks > 50 && std1[i].id > 120){<br /> console.log(std1[i]); <br /> } <br /> }
+    <br />
+
+    <b>Q4.</b>
+    <b>
+      Consider the same scenario we have discussed above, but this time we would
+      like to know the sum total of the marks of the students.
+    </b>
+    <br /><br />
+    <b></b>const result = studentRecords.filter((v)=> v.id>120.reduce((sum,m)=> sum=sum+m.marks,0)) <br /> console.log(result) <br /><br />
+
+    <b>Q5.</b>
+    <b>
+      This time we want to get only the names of the students who scored more
+      than 50 marks from the same dataset used above.
+    </b>
+    <br /><br />
+    <b></b>const result = studentRecords.filter((N)=> N.marks>50)
+    <br /> console.log(result.name) <br /><br />
+
+    <b>Q6.</b>
+    <b>
+      This time we are required to print the sum of marks of the students with
+      id > 120.
+    </b>
+    <br /><br />
+    <b>
+    </b>const result = studentRecords.filter((x)=> x.id>120)
+    <br /> console.log(result) <br /><br />
+
+    <b>Q7.</b>
+    <b>
+      This time we are required to print the total marks of the students with
+      marks greater than 50 after a grace of 15 marks has been added to those
+      students who scored less than 50.
+    </b>
+    <br /><br />
+    <b></b>const result = studentRecords.map((x)=> if(marks
+    <50) marks=marks+15 result.reduce((sum,p)=> sum=sum+p.marks,0)) <br /> console.log(result) <br /><br />
+
+        <b>Q8.</b>
+        <b>
+      Create 6 objects , each object will have name, class, roll no as
+      properties. Store these objects in an array of objects.
+    </b>
+        <br /><br />
+        <b></b>let studentRecord = [<br /> {name: 'John', class: 1 , rollNo : 110 },<br /> {name: 'Jemmy', class: 2 , rollNo : 112 }, <br /> {name: 'Alfan', class: 3 , rollNo : 222 }, <br /> {name: 'Tommy', class: 4 , rollNo : 103 }, <br /> {name: 'Faren',
+        class: 5 , rollNo : 305 }, <br /> {name: 'Aftab', class: 6 , rollNo : 809 }] <br /> console.log(studentRecord); <br />
+</body>
+
+</html>
