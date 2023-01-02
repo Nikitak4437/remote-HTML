@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+</head>
+
+<body>
+    <h3>
+        Q.1 Create 2 objects - parent and child. Attach methods to parent and use those methods in child object using parents prototype
+    </h3>
+    <pre>
+     Ans:-   
+        const parent = {
+            add(){
+               console.log(`${this.firstName}  ${this.lastName} ${this.age}`);
+           }
+       }
+       const child1 = Object.create(parent);
+       child1.firstName = "john";
+       child1.lastName = "Alic";
+       child1.age = "22";
+       child1.add();
+       
+       const child2 = Object.create(parent);
+       child2.firstName = "Alish";
+       child2.lastName = "Singh";
+       child2.age = "23";
+       child2.add();
+    </pre>
+
+    <h3>Q.2 Write code to explain prototype chaining</h3>
+    <pre>
+     Ans:- Prototype Chaining :- Prototypes are the means of inheritance in JavaScript. The prototype of an object would also have a prototype object.
+           This continues until we reach the top level when there is no prototype object.
+           This is called prototype chaining or prototype chain in JavaScript.
+           const o = {
+            a: 1,
+            b: 2,
+            // __proto__ sets the [[Prototype]]. It's specified here
+            // as another object literal.
+            __proto__: {
+              b: 3,
+              c: 4,
+              __proto__: {
+                d: 5,
+              },
+            },
+          };
+          
+          // { a: 1, b: 2 } ---> { b: 3, c: 4 } ---> { d: 5 } ---> Object.prototype ---> null
+          
+          console.log(o.d); // 5
+    </pre>
+
+    <h3>
+        Q.3 Add a method to calculate sum of all elements in Array in array's protype, use that method to calculate sum for multiple arrays
+    </h3>
+    <pre>
+     Ans:- 
+     const AddSum = {
+        name: "EA16",
+        add : function(a){
+            let sum = 0;
+            for(let i = 0 ; i < a.length ; i++){
+                sum += a[i];
+            }  
+            console.log(sum);  
+        }
+    }
+    
+    AddSum.add([1,2,3,4,5]);
+    
+    </pre>
+
+    <h3>
+        Q.4 Write a JavaScript function to retrieve all the names of object's own and inherited properties.
+    </h3>
+    <pre>
+    Ans:- The property of acquiring all the properties and behaviors of the parent object by an object is termed as inheritance. 
+    This is a unique feature in object oriented programming languages which facilitates re-usability of the code of the parent class by the derived class. 
+    In JavaScript, extends keyword is used to serve the purpose of inheritance.
+    
+    class Student
+    {
+      constructor()
+      {
+        this.college="NC College";
+      }
+    }
+    class CollegeStudent extends Student {
+      constructor(name,rollNo) {
+       super();
+        this.name=name;
+        this.rollNo=rollNo;
+      } 
+    }
+    var stu = new CollegeStudent("Navdeep",12);
+   console.log(stu.college+" "+stu.name+" "+stu.rollNo);
+    </pre>
+</body>
+
+</html>
