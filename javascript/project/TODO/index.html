@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Todo App</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='todo.css'>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body style="background-color: black;">
+    <section id="topheader">
+        <h2 style="color:white"> <b>Tasks </b> List</h2>
+        <h2 style="color:white" id="myBtn"><i class="fa fa-plus-circle" style="color: #01b5ff;"></i> Add New </h2>
+        
+    </section>
+
+    <section id="topheadertwo" style="display: none;">
+        <h2 style="color:white" onclick="backClick()"> <i class="fa fa-arrow-circle-left" style="color: #01b5ff;"></i> Back</h2>
+        <h2 style="color:white" id="head_task_title">Task Title</h2>
+        <h2 style="color:white" id="taskBtn" onclick="showTaskModalOnly()"><i class="fa fa-plus-circle" style="color: #01b5ff;"></i> Add New </h2>
+        
+    </section>
+
+    <section id="overview">
+        <div class="contener" id="div-1">
+            <p id="noitem" style="color: azure;">No items in todo list</p>
+       
+        </div>
+        </section>
+        <section id="details">
+            <div class="contener" style="justify-content: center;">
+                <div id="details-div" class="board"></div>
+            </div>
+            </section>
+
+            <div id="toDoModelBoard" class="modal">
+
+                <!-- Modal content -->
+                <div class="modal-content">
+                  <span class="close" onclick="closeModel('toDoModelBoard')">&times;</span>
+                  <p>Add New list</p>
+                  <input type="text" id="baord_name">
+                  <button onclick="addNewBoard()" >Add</button>
+                  <button onclick="closeModel('toDoModelBoard')">Close</button>
+
+                </div>              
+              </div>
+
+            <div id="toDoModelTask" class="modal">
+
+                <!-- Modal content -->
+                <div class="modal-content">
+                  <span class="close " onclick="closeModel('toDoModelTask')">&times;</span>
+                  <p>Add New Task</p>
+                  <input type="text" id="task_name">
+                  <button onclick="addNewTaskModalButton()" >Add</button>
+                  <button onclick="closeModel('toDoModelTask')" >Close</button>
+                </div>              
+              </div>
+</body>
+
+<div style="display: none;" id="board_clone">
+<div class="board">
+    <h1 class="border-title" onclick="showOnlyBoard(this)">{{baord_title_value}}</h1>
+    <hr>
+    <ul class="tasklist">
+        
+    </ul>
+    <div class="border-footer">
+    <i class="fa fa-trash-o" onclick="removeBoard(this)" style="
+    width: 25px;
+    background-color: red;
+    color: white;
+    padding: 6px;
+    border-radius: 100px;
+    height: 25px;
+"></i>
+    <i class="fa fa-plus" 
+    
+    style="
+    width: 25px;
+    background-color: #01b5ff;
+    color: white;
+    padding: 6px;
+    border-radius: 100px;
+    height: 25px;
+" onclick="showTaskModal(this)"
+> </i>
+    </div>
+</div>
+</div>
+<script src='todo.js'></script>
+</html>

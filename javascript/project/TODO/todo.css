@@ -1,0 +1,146 @@
+body{
+    font-family: sans-serif;
+}
+.contener{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.board {
+    flex: 1 0 21%; /* explanation below */
+  margin: 15px;
+  /* height: 100px; */
+   background-color: white;
+    text-align: center;
+    max-width: 24%;
+    border-radius:5px;
+    
+}
+ul{
+    padding-inline-start:0px;
+    list-style: none;
+}
+li{
+    line-height: 25px;
+}
+li.checked{
+    text-decoration: line-through;
+}
+.tasklist{
+    min-height: 200px;
+}
+.board ul li button {
+    color: white;
+    background-color: #01b5ff;
+    border-color: #01b5ff;
+    border-radius: 20px;
+}
+
+/* .close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 12px 16px 12px 16px;
+} */
+button{
+    margin-left: 5px;
+    margin-right: 5px;
+}
+#topheader{
+    padding: 20px;;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#topheadertwo{
+    padding: 20px;;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.border-title{
+color: red;
+}
+.border-footer{
+    font-size: 25px;
+    
+    padding: 20px;
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: nowrap;
+}
+.border-footer i{
+    margin: 10px;
+}
+
+
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgb(0 0 0 / 82%);
+}
+  
+  /* Modal Content */
+  .modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 30px;
+    border: 1px solid #888;
+    width: 50%;
+    text-align: center;
+  }
+
+  input{
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+    line-height: 40px;
+    margin-bottom: 25px;
+    text-align: center;
+    border-radius: 5px;
+    border-color: red !important;
+  }
+
+  .modal-content button {
+    padding: 10px;
+    width: 20%;
+    border-radius: 20px;
+    color: white;
+    background-color: red;
+    border-color: red;
+    font-size: 20px;
+}
+
+.modal-content p{
+    font-size: 20px;
+    font-weight: 700;
+    font-family: sans-serif;
+}
+
+
+  /* The Close Button */
+  .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
