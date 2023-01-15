@@ -25,12 +25,12 @@ function checkFunction() {
       number.innerHTML = guess.value;
       body.style.backgroundColor = "#60b347";
     } else if (Number(guess.value) <= HiddenNuber) {
-      message.innerHTML = "To low!";
+      message.innerHTML = "📉 To low!";
     } else {
-      message.innerHTML = "To high!";
+      message.innerHTML = "📈 To high!";
     }
   } else {
-    alert("Your chance is over");
+    alert(" Your chance is over");
   }
 }
 function hNo() {
