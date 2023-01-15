@@ -11,6 +11,7 @@ function againFunction() {
   guess.value = "0";
   message.innerHTML = "Start guessing...";
   body.style.backgroundColor = "#222";
+  number.innerHTML = "?";
 }
 function checkFunction() {
   hNo();
